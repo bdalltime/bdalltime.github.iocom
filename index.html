@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BD All Time Topup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #ff6600;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, select, button {
+      margin: 10px;
+      padding: 10px;
+      width: 250px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #ff6600;
+      color: white;
+      border: none;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      color: #444;
+    }
+    .highlight-box {
+      background-color: #fff3cd;
+      border: 1px solid #ffeeba;
+      color: #856404;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+    .copy-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      margin-top: 5px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #555;
+    }
+    .logo {
+      max-width: 180px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <img src="BD_All_Time_Topup_Logo.png" alt="Logo" class="logo" />
+  <h1>BD All Time Topup</h1>
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLSf7yYOUR_FORM_LINK/formResponse" method="POST" target="_blank">
+    <input type="text" name="entry.UID" placeholder="আপনার ফ্রি ফায়ার UID" required><br>
+    <select name="entry.Package" required>
+<option value="50">৫০ ডায়মন্ড – ৪৫ টাকা</option>
+<option value="85">৮৫ ডায়মন্ড – ৬০ টাকা</option>
+<option value="100">১০০ ডায়মন্ড – ৮৫ টাকা</option>
+<option value="220">২২০ ডায়মন্ড – ১৭০ টাকা</option>
+<option value="310">৩১০ ডায়মন্ড – ২৪০ টাকা</option>
+<option value="355">৩৫৫ ডায়মন্ড – ২৬৫ টাকা</option>
+<option value="400">৪০০ ডায়মন্ড – ২৯০ টাকা</option>
+<option value="520">৫২০ ডায়মন্ড – ৩৯০ টাকা</option>
+<option value="630">৬৩০ ডায়মন্ড – ৪৭০ টাকা</option>
+<option value="720">৭২০ ডায়মন্ড – ৫৪০ টাকা</option>
+<option value="860">৮৬০ ডায়মন্ড – ৬৫০ টাকা</option>
+<option value="1080">১০৮০ ডায়মন্ড – ৭৯০ টাকা</option>
+<option value="1450">১৪৫০ ডায়মন্ড – ১১০০ টাকা</option>
+<option value="2180">২১৮০ ডায়মন্ড – ১৬৫০ টাকা</option>
+<option value="2650">২৬৫০ ডায়মন্ড – ২০০০ টাকা</option>
+<option value="3050">৩০৫০ ডায়মন্ড – ২৪০০ টাকা</option>
+<option value="4000">৪০০০ ডায়মন্ড – ৩১০০ টাকা</option>
+<option value="5300">৫৩০০ ডায়মন্ড – ৪০০০ টাকা</option>
+<option value="weekly">Weekly Membership – ১৩০ টাকা</option>
+<option value="monthly">Monthly Membership – ৫৫০ টাকা</option>
+</select><br>
+
+    <div class="section-title">পেমেন্ট তথ্য:</div>
+    <div class="highlight-box">
+      বিকাশ (Send Money করুন): <span id="bkash">01822769871</span><br>
+      <button type="button" class="copy-btn" onclick="copyToClipboard('bkash')">কপি করুন</button>
+    </div>
+    <div class="highlight-box">
+      নগদ (Send Money করুন): <span id="nagad">01822769871</span><br>
+      <button type="button" class="copy-btn" onclick="copyToClipboard('nagad')">কপি করুন</button>
+    </div>
+
+    <input type="text" name="entry.TrxID" placeholder="পেমেন্ট ট্রানজাকশন ID" required><br>
+    <select name="entry.PaymentMethod" required>
+      <option value="">পেমেন্ট মাধ্যম নির্বাচন করুন</option>
+      <option value="bkash">বিকাশ</option>
+      <option value="nagad">নগদ</option>
+    </select><br>
+    <input type="text" name="entry.Contact" placeholder="মোবাইল নম্বর / হেল্প লাইন: 01822769871" required><br>
+    <button type="submit">অর্ডার করুন</button>
+  </form>
+
+  
+  <footer>
+    <p>বিশ্বস্ততা, দ্রুততা আর সেবা—BD All Time Topup, গেমারদের নির্ভরতার ঠিকানা!</p>
+  </footer>
+
+
+  <script>
+    function copyToClipboard(id) {
+      var copyText = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(copyText).then(function() {
+        alert('নাম্বার কপি হয়েছে: ' + copyText);
+      });
+    }
+  </script>
+</body>
+</html>
